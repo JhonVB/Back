@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 """enersinc URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,32 +14,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
->>>>>>> 311a2a502f7fe1b8b72a7a081fcf49d64aebb43d
+
 from re import template
 from django.contrib import admin
 from django.urls import path,include
 from tasks.urls import TaskRouter
-<<<<<<< HEAD
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('tasks.urls')),
     path('api/', include(TaskRouter.urls))
-=======
-# from django.views.generic import TemplateView
-# from tasks.views import PersonasViewset
-# from rest_framework.routers import DefaultRouter
-# from Persona.views import PersonaViewset
-# from rest_framework
-
-# router = DefaultRouter()
-
-# router.register("/posts",PersonasViewset)
-# print(router)
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include(TaskRouter.urls)),
->>>>>>> 311a2a502f7fe1b8b72a7a081fcf49d64aebb43d
 ]
