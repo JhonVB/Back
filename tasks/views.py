@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from .models import Persona
 from rest_framework import viewsets
 from .serializers import PersonaSerializer
@@ -34,3 +35,14 @@ def getRoutes(request):
       "/api/token/refresh",
    ]
    return Response(routes)
+=======
+from django.shortcuts import render
+from .models import Persona
+from rest_framework import viewsets
+from .serializers import PersonaSerializer
+# Create your views here.
+
+class PersonasViewset(viewsets.ModelViewSet):
+   serializer_class = PersonaSerializer
+   queryset= Persona.objects.all()
+>>>>>>> 311a2a502f7fe1b8b72a7a081fcf49d64aebb43d
