@@ -9,6 +9,7 @@ from rest_framework_simplejwt.views import (
 TaskRouter = routers.DefaultRouter()
 TaskRouter.register(r'person', PersonasViewset)
 
+
 urlpatterns =[
    path("",getRoutes),
    path('token/',MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
