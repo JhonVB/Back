@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-=======
+
+
 from dataclasses import fields
->>>>>>> 311a2a502f7fe1b8b72a7a081fcf49d64aebb43d
+
 from .models import Persona
 from rest_framework import serializers
 
@@ -10,9 +10,7 @@ class PersonaSerializer(serializers.ModelSerializer):
       model = Persona
       fields='__all__'
 
-<<<<<<< HEAD
- 
-=======
+
    # def to_representation(self, instance):
    #    return {
    #       "type_document": instance["type_document"],
@@ -21,4 +19,4 @@ class PersonaSerializer(serializers.ModelSerializer):
    #       "last_name":instance["last_name"],
    #       "hobbie":instance["hobbie"],
    #    }
->>>>>>> 311a2a502f7fe1b8b72a7a081fcf49d64aebb43d
+
